@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Service Pro Portal</title>
+    
+    <!-- MUI Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-blue': '#4f46e5',
+              'brand-blue-dark': '#4338ca',
+              'brand-blue-light': '#e0e7ff',
+              'brand-gray-dark': '#1e293b',
+              'brand-gray': '#64748b',
+              'brand-gray-light': '#f1f5f9',
+            }
+          }
+        }
+      }
+    </script>
+    
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.2.0",
+    "react/": "https://esm.sh/react@18.2.0/",
+    "react-dom": "https://esm.sh/react-dom@18.2.0",
+    "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+    "react-dom/": "https://esm.sh/react-dom@18.2.0/",
+    "@mui/material": "https://esm.sh/@mui/material@5.15.14?external=react,react-dom,@emotion/react,@emotion/styled",
+    "@mui/material/": "https://esm.sh/@mui/material@5.15.14/",
+    "@mui/icons-material": "https://esm.sh/@mui/icons-material@5.15.14?external=react",
+    "@mui/icons-material/": "https://esm.sh/@mui/icons-material@5.15.14/",
+    "@emotion/react": "https://esm.sh/@emotion/react@11.11.4?external=react",
+    "@emotion/styled": "https://esm.sh/@emotion/styled@11.11.0?external=react",
+    "recharts": "https://esm.sh/recharts@2.12.7?external=react,react-dom",
+    "recharts/": "https://esm.sh/recharts@2.12.7/?external=react,react-dom"
+  }
+}
+</script>
+    <style>
+      /* Professional Gradient Background for Glassmorphism Effect */
+      body {
+        --gradient-color-1: #f0f4ff;
+        --gradient-color-2: #e6e9f7;
+        --gradient-color-3: #f5eeff;
+        --gradient-color-4: #eef7ff;
+        background-color: var(--gradient-color-1);
+        background-image: 
+          radial-gradient(at 0% 0%, var(--gradient-color-3) 0px, transparent 50%),
+          radial-gradient(at 90% 10%, var(--gradient-color-4) 0px, transparent 50%),
+          radial-gradient(at 20% 80%, var(--gradient-color-1) 0px, transparent 50%),
+          radial-gradient(at 80% 90%, var(--gradient-color-2) 0px, transparent 50%);
+        min-height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+{
+  "name": "E-Service Pro Portal",
+  "description": "A comprehensive, multi-role e-service platform. Users can request services, technicians can manage jobs, and administrators can oversee operations with an analytics dashboard. Features include role-based access, a full request lifecycle, and a premium user interface.",
+  "requestFramePermissions": []
+}
